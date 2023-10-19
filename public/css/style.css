@@ -58,8 +58,10 @@
     font-family: "Novecento sans";
 }
 .projeto{
+  
     margin-top: 8em;
     display: flex;
+    
     justify-content: space-around;
 }
 .body-text{
@@ -87,4 +89,7 @@
         right: 0;
         top: calc(80vh - 30vw);
     }
+}
+@media(max-width: 790px){
+  
 }
