@@ -5,14 +5,11 @@
     color: white;
     
 }
-body{
-    overflow-x: hidden;
-}
 
 #Principal{
     display: flex;
     padding-left: 3em;
-    align-items: center;
+    box-sizing: border-box;
     flex-wrap: wrap;
     background-color: blue;
     height: 80vh;
@@ -22,9 +19,22 @@ body{
 }
 #text{
     max-width: 600px;
-    
+    align-self: center;
     font-family: "Roboto Mono", sans-serif;
 }
 #text p {
     margin-top: 3em;
+}
+#Principal img{
+    display: none;
+}
+@media(min-width: 800px){
+    #Principal img{
+        display: block;
+        width: 30vw;
+        height: 30vw;
+        position: absolute;
+        right: 0;
+        top: calc(80vh - 30vw);
+    }
 }
