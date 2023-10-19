@@ -1,8 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
-
+@font-face {
+    font-family: 'Novecento sans';
+    src: local('Novecento sans Demi Bold'), local('Novecento-sans-Demi-Bold'),
+        url('../fonts/Novecentosanswide-DemiBold.woff2') format('woff2'),
+        url('../fonts/Novecentosanswide-DemiBold.woff') format('woff'),
+        url('../fonts/Novecentosanswide-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Ideal Regular';
+    src: local('Ideal Regular'), local('Ideal Regular'),
+        url('../fonts/Idealist\ Sans.otf') format('otf'),
+        url('../fonts/Idealist\ Sans.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
 *{
     margin: 0;
-    color: white;
     
 }
 
@@ -11,7 +26,7 @@
     padding-left: 3em;
     box-sizing: border-box;
     flex-wrap: wrap;
-    background-color: blue;
+    background-color: #161C8C;
     height: 80vh;
     width: 100%;
 
@@ -20,13 +35,48 @@
 #text{
     max-width: 600px;
     align-self: center;
-    font-family: "Roboto Mono", sans-serif;
+    font-family: "Novecento sans", sans-serif;
+    color: #8BFFF0;
+
 }
 #text p {
     margin-top: 3em;
+    font-family: "Ideal Regular";
+}
+#text h1{
+    font-size: 10vh;
 }
 #Principal img{
     display: none;
+}
+#Projetos{
+    padding-top: 2em;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #0487D9;
+    color: white;
+    font-family: "Novecento sans";
+}
+.projeto{
+    margin-top: 8em;
+    display: flex;
+    justify-content: space-around;
+}
+.body-text{
+    max-width: 600px;
+}
+.body-img img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 30px;
+}
+.projeto:nth-child(2n){
+    
+    flex-direction: row-reverse;
+}
+#Projetos h2{
+    text-align: center;
+    font-size: 8vh;
 }
 @media(min-width: 800px){
     #Principal img{
